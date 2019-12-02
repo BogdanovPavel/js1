@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<script>
+  "use strict";
+
+  // function power(val, pow), где val – заданное число, pow – степень.
+  
+  function myPow(base, exponent) {
+    if (exponent <= 0) {
+	  return 1;
+	}
+	
+	if (exponent > 1) {
+	  return base * myPow(base, exponent -1);
+	} else {
+	  return base;
+	}
+  }
+  console.log(myPow(2, 4));
+</script>
