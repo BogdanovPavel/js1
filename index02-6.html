@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<script>
+  "use strict";
+
+  function mysumm(a, b) {
+    return a+b;
+  }
+  function mydifference(a, b) {
+    return a-b;
+  }
+  function mydivision(a, b) {
+    return a/b;
+  }
+  function mymultiplication(a, b) {
+    return a*b;
+  }
+  function mathOperation(arg1, arg2, operation) {
+    console.log(operation);
+    switch (operation) {
+      case 'summ':
+        mysumm(arg1, arg2);
+        break;
+      case 'difference':
+        mydifference(arg1, arg2);
+        break;
+      case 'division':
+        mydivision(arg1, arg2);
+        break;
+      case 'multiplication':
+        mymultiplication(arg1, arg2);
+        break;
+    }
+
+
+  }
+
+  let a = 2, b = 4;
+  console.log(mathOperation(a, b, 'summ'));
+  console.log(mathOperation(a, b, 'difference'));
+  console.log(mathOperation(a, b, 'division'));
+  console.log(mathOperation(a, b, 'multiplication'));
+  // к сожалению не работате не могу понять почему вроде можно использовать в значениях switch строки
+
+</script>
