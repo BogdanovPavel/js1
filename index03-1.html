@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<script>
+  "use strict";
+
+  const i = 100;
+  let primenumber = 0, a, b;
+  while(primenumber <= i){
+    a = 2;
+    b = true;
+    while (a <= primenumber - 1) {
+      if (primenumber % a === 0) {
+        b = false;
+      }
+      ++a;
+    }
+    if (b && primenumber > 1) {
+      console.log(primenumber);
+    }
+    ++primenumber;
+  }
+
+// успел сделать только 2 задания на выходных догоню 
+
+</script>
